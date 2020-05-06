@@ -8,7 +8,7 @@
 
 # Description du Projet
 Version simpliste de *IKEA*, site web donnant accès aux différents meubles proposés par l'entreprise.
-Divers menus cliquable, munis du nom des catégories des meubles et eux-mêmes composés des différentes produits proposés.
+Divers menus cliquables, munis du nom des catégories des meubles et eux-mêmes composés des différentes produits proposés.
 
 # Aspects implémentés
 (à compléter)
