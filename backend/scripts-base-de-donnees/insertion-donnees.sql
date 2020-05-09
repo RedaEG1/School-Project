@@ -1,6 +1,6 @@
 /**Données**/
 
-INSERT INTO pieces
+INSERT INTO DBA.pieces
 (idPiece, nomPiece)
 VALUES 
 (10, 'Living'),
@@ -21,7 +21,7 @@ VALUES
 ('E', 'bureux')
 ;
 
-INSERT INTO produits 
+INSERT INTO DBA.produits 
 (idProd, nomProd)
 VALUES 
 ('p01','aman'),
@@ -51,7 +51,7 @@ VALUES
 ('p25','redld')
 ;
 
-INSERT INTO produitsPieces
+INSERT INTO DBA.produitsPieces
 (prodId, pieceId)
 VALUES
 ('p01', 10),
@@ -141,7 +141,7 @@ VALUES
 ('p25', 15)
 ;
 
-INSERT INTO produitsCategories
+INSERT INTO DBA.produitsCategories
 (prodId, catId)
 VALUES
 ('p01','A'),
@@ -171,7 +171,7 @@ VALUES
 ('p25','E')
 ;
 
-INSERT INTO categoriesPieces
+INSERT INTO DBA.categoriesPieces
 (catId, pieceId)
 VALUES
 ('A', 10),
