@@ -1,40 +1,52 @@
 /**Données**/
 
-INSERT INTO "DBA".Categorie (idCat, categorie)
+INSERT INTO pieces
+(idPiece, nomPiece)
 VALUES 
-(01, 'chaises'),
-(02, 'armoires'),
-(03, 'tables'),
-(04, 'lits'),
-(05, 'bureux')
+(10, 'Living'),
+(11, 'Salle à manger'),
+(12, 'Cuisine'),
+(13, 'Terrasse'),
+(14, 'Chambres enfant'),
+(15, 'Chambres adulte')
 ;
 
-INSERT INTO "DBA".Produits(idProd, produit, categId)
+INSERT INTO DBA.categories
+(idCat, nomCat)
 VALUES 
-(100,'aman', 01),
-(101,'senem', 01),
-(102,'ribuk', 01),
-(103,'cjitul', 01),
-(104,'ajax', 01),
-(105,'leval', 02),
-(106,'arbot', 02),
-(107,'catux', 02),
-(108,'vidor', 02),
-(109,'suckle', 02),
-(110,'tubon', 03),
-(111,'mayi', 03),
-(112,'lidhx', 03),
-(113,'qutu', 03),
-(114,'chodol', 03),
-(115,'luxs', 04),
-(116,'timlbr', 04),
-(117,'shyc', 04),
-(118,'bonrr', 04),
-(119,'tvbosl', 04),
-(120,'buduc', 05),
-(121,'dafurofk', 05),
-(122,'amklid', 05),
-(123,'gjup', 05),
-(124,'redld', 05)
+('A', 'chaises'),
+('B', 'armoires'),
+('C', 'tables'),
+('D', 'lits'),
+('E', 'bureux')
 ;
-  
+
+INSERT INTO produits 
+(idProd, nomProd)
+VALUES 
+('p01','aman'),
+('p02','senem'),
+('p03','ribuk'),
+('p04','cjitul'),
+('p05','ajax'),
+('p06','leval'),
+('p07','arbot'),
+('p08','catux'),
+('p09','vidor'),
+('p10','suckle'),
+('p11','tubon'),
+('p12','mayi'),
+('p13','lidhx'),
+('p14','qutu'),
+('p15','chodol'),
+('p16','luxs'),
+('p17','timlbr'),
+('p18','shyc'),
+('p19','bonrr'),
+('p20','tvbosl'),
+('p21','buduc'),
+('p22','dafurofk'),
+('p23','amklid'),
+('p24','gjup'),
+('p25','redld')
+;
