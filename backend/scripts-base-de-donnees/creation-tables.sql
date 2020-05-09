@@ -19,7 +19,7 @@ CONSTRAINT fkCategType FOREIGN KEY (catType) REFERENCES types
 ------------------Troisieme table-------------------------------------
 CREATE TABLE produits
 (
-idProd INTEGER NOT NULL DEFAULT AUTOINCREMENT,
+idProd CHAR(3),
 nomProd CHAR(40) NOT NULL,
 prodType INTEGER NOT NULL DEFAULT AUTOINCREMENT,
 prodCat INTEGER NOT NULL DEFAULT AUTOINCREMENT,
