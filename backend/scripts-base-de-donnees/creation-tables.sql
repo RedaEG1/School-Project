@@ -40,7 +40,7 @@ CONSTRAINT fkPieceLiaison FOREIGN KEY (pieceId) REFERENCES pieces
 CREATE TABLE produitsCategories
 (
 prodId CHAR(3) NOT NULL,
-catId CHAR(1),
+catId CHAR(1) NOT NULL,
 CONSTRAINT fkprodProd FOREIGN KEY (prodId) REFERENCES produits,
 CONSTRAINT fkprodCate FOREIGN KEY (catId) REFERENCES categories
 );
