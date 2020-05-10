@@ -15,3 +15,8 @@ Divers menus cliquables, munis du nom des catégories des meubles et eux-mêmes 
 
 # Détail API rest 
 (à compléter)
+
+
+# Diagramme ER
+
+https://cdn.discordapp.com/attachments/704314250616766574/709052753368055808/diagramme_Er.png
