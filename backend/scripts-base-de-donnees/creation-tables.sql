@@ -30,9 +30,9 @@ CONSTRAINT pkProduit PRIMARY KEY (idProd)
 CREATE TABLE produitsPieces
 (
 prodId CHAR(3) NOT NULL,
-pieceId INTEGER NOT NULL AUTOINCREMENT,
+pieceId INTEGER NOT NULL  DEFAULT AUTOINCREMENT,
 CONSTRAINT fkProdLiaison FOREIGN KEY (prodId) REFERENCES produits,
-CONSTRAINT fkPieceLiaison FOREGIN KEY (pieceId) REFERENCES pieces
+CONSTRAINT fkPieceLiaison FOREIGN KEY (pieceId) REFERENCES pieces
 ); 
 
 --------------Cinquieme table---------------------------------------------
