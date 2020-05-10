@@ -10,7 +10,7 @@ CONSTRAINT pkPiece PRIMARY KEY (idPiece)
 ---------------------Deuxieme table----------------------------------
 CREATE TABLE categories
 (
-idCat INTEGER NOT NULL DEFAULT AUTOINCREMENT,
+idCat CHAR(1) NOT NULL,
 nomCat CHAR(20) NOT NULL,
 CONSTRAINT pkCateg PRIMARY KEY (idCat)
 
