@@ -19,7 +19,7 @@ CONSTRAINT pkCateg PRIMARY KEY (idCat)
 ------------------Troisieme table-------------------------------------
 CREATE TABLE produits
 (
-idProd CHAR(3),
+idProd CHAR(3) NOT NULL,
 nomProd CHAR(40) NOT NULL,
 CONSTRAINT pkProduit PRIMARY KEY (idProd)
 
@@ -49,7 +49,7 @@ CONSTRAINT fkprodCate FOREIGN KEY (catId) REFERENCES categories
 
 CREATE TABLE categoriesPieces
 (
-catId CHAR(1),
+catId CHAR(1) NOT NULL,
 pieceId INTEGER NOT NULL DEFAULT AUTOINCREMENT,
 CONSTRAINT fkcatLaison FOREIGN KEY (catId) REFERENCES categories,
 CONSTRAINT fkpieceLiaison FOREIGN KEY (pieceId) REFERENCES pieces
