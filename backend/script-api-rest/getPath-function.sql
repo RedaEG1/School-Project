@@ -1,4 +1,4 @@
-/**Functions**/
+
 CREATE FUNCTION getPath()
 returns long varchar
 deterministic
