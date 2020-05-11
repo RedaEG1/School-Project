@@ -1,5 +1,5 @@
 # Projet final
-(à compléter)
+Menu cliquable qui amène différentes pièces, pour celà 6 tables SQL, 3 contenants les informations et 3 autres po
 # Présentation de l'équipe
 * Bailly Xavier
 * EG. Reda
