@@ -29,3 +29,10 @@ function xhrReqHtml(url, id){ // l'id de l'élément html
     xhr.send()
 }
 
+function dbtoJs() {}
+
+
+function formtoDb() {}
+
+
+function filter() {}
