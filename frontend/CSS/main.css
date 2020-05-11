@@ -1,9 +1,12 @@
+
+/*STYLE MENU*/
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #0157a2;
+
 }
 
 li {
@@ -22,6 +25,30 @@ li a:hover {
     background-color: #111;
 }
 
-#titleBar{
-    font-family: Verdana;
+.active {
+    background-color: #4CAF50;
 }
+
+/*STYLE GALLERIE*/
+
+div.gallerie {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallerie:hover {
+    border: 1px solid #777;
+}
+
+div.gallerie img {
+    width: 100%;
+    height: auto;
+}
+
+div.legende {
+    padding: 15px;
+    text-align: center;
+}
+
