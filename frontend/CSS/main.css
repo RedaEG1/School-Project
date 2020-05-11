@@ -1,12 +1,12 @@
-
 /*STYLE MENU*/
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #0157a2;
-
+    font-family: Verdana;
 }
 
 li {
@@ -36,6 +36,7 @@ div.gallerie {
     border: 1px solid #ccc;
     float: left;
     width: 180px;
+    font-family: Verdana;
 }
 
 div.gallerie:hover {
@@ -50,5 +51,44 @@ div.gallerie img {
 div.legende {
     padding: 15px;
     text-align: center;
+    background-color: lightgrey;
 }
 
+/*FORM*/
+
+form{
+    font-family: Verdana;
+    background-color: #0157a2 ;
+    display: block;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    color:  white;
+    padding: 15px;
+    text-align: left;
+    width: 98%;
+}
+
+input[type=text]{
+    border: 2px solid #0157a2;
+
+}
+
+input[type=email]{
+    border: 2px solid #0157a2;
+}
+
+input[type=text]:focus, input[type=email]:focus{
+    background-color: lightgrey;
+}
+
+input[type=submit]{
+    font-family: Verdana;
+
+}
+
+#droits{
+    float: right;
+    color: lightblue;
+    font-size: small;
+}
