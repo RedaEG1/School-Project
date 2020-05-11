@@ -28,14 +28,16 @@ FRONTEND
 * Couleurs et styles représentant l'entreprise (bleu et jaune)
 
 # Détail API rest 
-* WEBSERVICE commun : * getCSS en paramètre un *URL*, endpoint : accès au CSS de la page
-                      * getIMG en paramètre un *URL*, endpoint : afficher les images du dossier images du siteweb
-                      * getJS en paramètre un *URL*, endpoint : permettre l'interactivité du siteweb avec l'utilisateur
-                      * getPage en paramètre un *URL*, endpoint : accès à la page globale
-* WEBSERVICE créés : * tableFormu avec auncun paramètre, endpoint : création de la table pour les utilisateurs inscrits
-                     * addnewUti en paramètre un *VARCHAR*, endpoint : ajout du nouvel utilisateur dans la table des inscrits
-                     * triMenu en paramètre deux *VARCHAR* (sont les conditions de tri), endpoint : nouvelle table selon le tri
-                     * livraisonPossible en paramètre un *VARCHAR* (ville dans le formulaire de l'utilisateur), endpoint :                                possibilité de livraison FORMAT *CHAR(3)*
+WEBSERVICE commun : 
+* getCSS en paramètre un *URL*, endpoint : accès au CSS de la page
+* getIMG en paramètre un *URL*, endpoint : afficher les images du dossier images du siteweb
+* getJS en paramètre un *URL*, endpoint : permettre l'interactivité du siteweb avec l'utilisateur
+* getPage en paramètre un *URL*, endpoint : accès à la page globale
+WEBSERVICE créés : 
+* tableFormu avec auncun paramètre, endpoint : création de la table pour les utilisateurs inscrits
+* addnewUti en paramètre un *VARCHAR*, endpoint : ajout du nouvel utilisateur dans la table des inscrits
+* triMenu en paramètre deux *VARCHAR* (sont les conditions de tri), endpoint : nouvelle table selon le tri
+* livraisonPossible en paramètre un *VARCHAR* (ville dans le formulaire de l'utilisateur), endpoint :                                possibilité de livraison FORMAT *CHAR(3)*
 # Diagramme ER
 
 https://cdn.discordapp.com/attachments/704314250616766574/709052753368055808/diagramme_Er.png
