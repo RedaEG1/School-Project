@@ -18,7 +18,7 @@ VALUES
 ('B', 'armoires'),
 ('C', 'tables'),
 ('D', 'lits'),
-('E', 'bureux')
+('E', 'bureaux')
 ;
 
 INSERT INTO DBA.produits 
