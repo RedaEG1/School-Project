@@ -33,6 +33,7 @@ WEBSERVICE commun :
 * getIMG en paramètre un *URL*, endpoint : afficher les images du dossier images du siteweb
 * getJS en paramètre un *URL*, endpoint : permettre l'interactivité du siteweb avec l'utilisateur
 * getPage en paramètre un *URL*, endpoint : accès à la page globale
+
 WEBSERVICE créés : 
 * tableFormu avec auncun paramètre, endpoint : création de la table pour les utilisateurs inscrits
 * addnewUti en paramètre un *VARCHAR*, endpoint : ajout du nouvel utilisateur dans la table des inscrits
