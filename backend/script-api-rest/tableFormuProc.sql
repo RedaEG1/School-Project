@@ -1,0 +1,11 @@
+CREATE PROCEDURE tableFormu()
+BEGIN 
+ CREATE TABLE utilisateurs
+ (
+ idUti INTEGER NOT NULL DEFAULT AUTOINCREMENT,
+ nomUti VARCHAR(40) NOT NULL,
+ prenomUti VARCHAR(40) NOT NULL,
+ email VARCHAR(100) NULL,
+ CONSTRAINT pk__utilisateurs PRIMARY KEY(idUti)
+ );
+END;
