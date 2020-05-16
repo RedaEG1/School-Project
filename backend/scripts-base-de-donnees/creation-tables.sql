@@ -1,3 +1,5 @@
+PAR : SIMON PERIQUET
+
 ----------------------Premiere table--------------------------------
 CREATE TABLE pieces
 (
