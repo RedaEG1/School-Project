@@ -1,5 +1,4 @@
 --------LA PROCEDURE LIEE A SON SERVICE WEB------------------
-
 CREATE PROCEDURE getProdCat()
 RESULT ( nom CHAR(20), cat CHAR(20))
 BEGIN 
