@@ -1,3 +1,4 @@
+PAR SIMON PERIQUET
 
 function showBox(n){ //ramene le contenu de la page souhaitée.
    xhr = new XMLHttpRequest(); //instance
