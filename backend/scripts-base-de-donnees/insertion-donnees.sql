@@ -1,15 +1,16 @@
-/**Données**/
+PAR : SIMON PERIQUET
 
-INSERT INTO DBA.pieces
+INSERT INTO pieces
 (idPiece, nomPiece)
 VALUES 
-(10, 'Living'),
-(11, 'Salle à manger'),
-(12, 'Cuisine'),
-(13, 'Terrasse'),
-(14, 'Chambres enfant'),
-(15, 'Chambres adulte')
+('livi', 'Living'),
+('sall', 'Salle à manger'),
+('cuis', 'Cuisine'),
+('terr', 'Terrasse'),
+('chen', 'Chambres enfant'),
+('chad', 'Chambres adulte')
 ;
+
 
 INSERT INTO DBA.categories
 (idCat, nomCat)
