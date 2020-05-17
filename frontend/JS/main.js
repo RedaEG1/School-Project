@@ -48,7 +48,7 @@ function soumettreRequete(event){
 
 /**
  * Envoie la requete en utilisant le webservice souhaité
- * 
+ *
  * @param prenom prenom de la personne inscrite
  * @param nom de la personne inscrite
  * @param adresse adresse de la personne inscrite
@@ -71,7 +71,7 @@ function envoyerRequete(prenom, nom, adresse, email, ville){
 
 /**
  * Demande via le service précisé ci-dessous les différentes pièces du menu + appel à une fonction pour traiter la réponse donnée
- * 
+ *
  */
 function piecesIkeo(){
     let xhr = new XMLHttpRequest();
@@ -84,8 +84,8 @@ function piecesIkeo(){
 /***********************************************************************************************/
 
 /**
- * Transforme la réponse en texte adapté en js. Appel 2 autres fonctions pour traiter le tableau d'objet 
- * 
+ * Transforme la réponse en texte adapté en js. Appel 2 autres fonctions pour traiter le tableau d'objet
+ *
  */
 function traiterReponse(){
     let reponse = JSON.parse(this.responseText);
@@ -98,7 +98,7 @@ function traiterReponse(){
 
 /**
  * Génère le menu composé des pièces pour pouvoir l'afficher dynamiquement en HTML
- * 
+ *
  * @param tableauObjets tableau d'objet acquis par la fonction JSON.parse
  * @returns {string} retourne le tableau pour pouvoir l'afficher
  */
@@ -111,14 +111,17 @@ function genererMenu(tableauObjets){
 
     for(let objet in tableauObjets) {
         let option = "<li ";
-            option += 'id="' + tableauObjets[objet][id] + '">' + tableauObjets[objet][pieces]  + '</li>';
+        option += 'id="' + tableauObjets[objet][id] + '">' + tableauObjets[objet][pieces]  + '</li>';
         liste += option;
     }
-        liste += "</ul>";
+    liste += "</ul>";
 
 }
 
+function afficherMenu(tab){
+    let menu = document.getElementById("menu");
+    menu.innerHTML += tab;
+}
+
 /***********************************************************************************************/
-//Action sur le menu ( à compléter par les autres étudiants)
-
-
+//Action sur le menu ( à compléter par les 
