@@ -37,6 +37,7 @@ D
 Définissons tout d'abord 3 caractéristiques d'une procédure SQL :
 PARAMETRES : Sur base de quelle donnée la procédure va se reposer.
 FORMAT DE REPONSE : Sous quelle forme informatique est donnée la réponse (integer, number, etc.)
+
 ENDPOINT : Le but de la procédure
 
 Simon PERIQUET : 
@@ -44,16 +45,19 @@ Simon PERIQUET :
 * La procédure "proc_callPieces()" invoquée par le service web "piecesMenu" : 
 PARAMETRE(S) : AUCUN.
 FORMAT DE REPONSE : 2 colonnes ( un id CHAR(4) et un nom  CHAR(20)
+
 ENDPOINT : Ramener TOUTES les pièces avec leur id et leur nom
 
 * La procédure "proc_choixPiece(IN idsalle CHAR(20)) invoquée par le service web "choixPieces" :
 PARAMETRE(S) : Un ID de type CHAR(20)
 FORMAT DE REPONSE : 2 colonnes ( un id CHAR(4), meuble VARCHAR(40))
+
 ENDPOINT : Ramener les meubles d'une pièce précise via l'id de celle-ci
 
 * La procédure "proc_nouvUti(IN prenom VARCHAR(40), IN nom VARCHAR(40), IN adresse VARCHAR(120), IN email VARCHAR(120), IN ville VARCHAR(40) ) invoquée par le service web "nouvelUti" :
 PARAMETRE(S) : 5 paramètres : un prenom type VARCHAR(40), nom VARCHAR(40), adresse VARCHAR(120), adresse email VARCHAR(120), une ville VARCHAR(40)
 FORMAT DE REPONSE : AUCUN.
+
 ENDPOINT : Inscrit dans la table utilisateurs le nouvel inscrit en lui donnant en plus un Id et ne prenant que l'initiale du nom
 
 Pour les services web, aucun ne demande d'autorisation ni de sécurité. De plus les 3 procédures sont du type JSON.
@@ -90,5 +94,6 @@ categoriesPieces : composé de 3 colonnes ( TABLE DE LIAISON )
   catId : Clé étrangère de la table categories de la colonne du même nom,
   pieceId : Clé étrangère de la table pieces de la colonne(idPiece).
   
-  
+  ![DATABASE](https://user-images.githubusercontent.com/64195967/82154179-6c5ac780-986c-11ea-9239-bf948196bee3.png)
+
 
