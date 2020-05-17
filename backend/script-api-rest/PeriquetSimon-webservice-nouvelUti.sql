@@ -7,3 +7,7 @@ BEGIN
     VALUES
     (LEFT(nom, 1), prenom, adresse, email, ville)
 END
+
+/**************************************************************************************/
+
+CREATE SERVICE "nouvelUti" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call DBA.proc_nouvelUti(:prenom,:nom,:adresse,:email,:ville);
