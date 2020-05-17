@@ -51,5 +51,15 @@ CONSTRAINT fkcatLaison FOREIGN KEY (catId) REFERENCES categories,
 CONSTRAINT fkpieceLiaison FOREIGN KEY (pieceId) REFERENCES pieces
 );
 
+---------Sixieme table-------------------------------------------------------
 
-
+CREATE TABLE utilisateurs
+(
+idUti INTEGER NOT NULL DEFAULT AUTOINCREMENT,
+nomUti CHAR(1) NOT NULL,
+prenomUti VARCHAR(40)NOT NULL,
+adresseUti VARCHAR(120) NOT NULL,
+emailUti VARCHAR(120) NOT NULL,
+villeUti VARCHAR(120) NOT NULL,
+CONSTRAINT pk__utilisateurs PRIMARY KEY(idUti)
+);
