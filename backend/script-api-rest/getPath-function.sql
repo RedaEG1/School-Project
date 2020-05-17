@@ -1,3 +1,4 @@
+PAR SIMON PERIQUET
 
 CREATE FUNCTION getPath()
 returns long varchar
