@@ -1,8 +1,4 @@
 # Projet final
-Menu cliquable qui amène différentes pièces, pour celà 6 tables SQL, 3 contenants les informations et 3 autres ayant le rôle de
-tables de Liaison. Intégrées par les PK des autres tables.
-Un formulaire simple d'inscription qui envoie les données vers la db.
-Un tri possible pour affiner la recherche
 # Présentation de l'équipe
 * Bailly Xavier
 * EG. Reda
@@ -10,22 +6,46 @@ Un tri possible pour affiner la recherche
 * Periquet Simon
 
 # Description du Projet
-Version simpliste de *IKEA*, site web donnant accès aux différents meubles proposés par l'entreprise.
-Divers menus cliquables, on retrouve les pièces de la maison et les catégories de meubles qui peuvent y être installés.
+BESOINS ATTENDUS PAR L UTILISATEUR
+* IKEO regroupe sur son site web les différnets produits vendus par la société.
+FONCTIONNALITES
+* Une page découpée en trois parties : * Un menu cliquable : Il propose les salles où les meubles se situent dans la maison.
+                                       * Un espace libre : Pour afficher les requêtes qui sont faites en BACKEND.
+                                       * Un formulaire : L'utilisateur peut s'inscrire pour pouvoir profiter de services.
+                                       
 
 # Aspects implémentés
-BACKEND
-* Webservices de requête http simple
-* Une base de données divisés en 6 tables
-* Des procédures de tri sans paramètres
-* Webservice JSON permettant la diffusion des informations du formulaire vers la base de données
-* Les menus proposés filtrés et présentés par les requêtes *Ajax* *Json*
+Voici les divers aspects techniques mis en place pour quel le projet voit le jour, ceux-ci sont divisés en 2 parties importantes :
+*backend* (base de données, procédures SQL, webservices associé à sa procédure propre) et *frontend*(HTML, CSS, JS)
+BACKEND 
+* Base de données :
+  Appelée dbIkeo, elle est composé de 6 TABLES :
+                        * utlisateurs : composée de 6 colonnes : 
+                                                               * idUti:
+                                                               * nomUti:
+                                                                
 
-FRONTEND
-* Une page principale de présentation divisé en une liste de menus cliquable (UL)
-* Une gallerie de présentation simplement modifiée via CSS
-* Un formulaire en *footer*
-* Couleurs et styles représentant l'entreprise (bleu et jaune)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Détail API rest 
 WEBSERVICE commun : 
