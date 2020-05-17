@@ -1,4 +1,0 @@
-CREATE PROCEDURE resetTable()
-BEGIN 
- DROP TABLE IF EXISTS  utilisateurs;
-END;
