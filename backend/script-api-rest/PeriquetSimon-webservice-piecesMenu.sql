@@ -7,3 +7,4 @@ BEGIN
 END
 /***************************************************************************************************************/
 
+CREATE SERVICE "piecesMenu" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call DBA.proc_proc_callPieces()
