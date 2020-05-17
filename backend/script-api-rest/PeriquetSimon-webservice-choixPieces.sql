@@ -8,3 +8,6 @@ BEGIN
     JOIN pieces as t5 ON t4.pieceId = t5.idPiece
     WHERE nomPiece = idsalle
 END
+/****************************************************************************************/
+
+CREATE SERVICE "choixPieces" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call DBA.proc_choixPiece(:idsalle)
