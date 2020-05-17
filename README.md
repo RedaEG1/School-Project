@@ -70,4 +70,19 @@ ENDPOINT : Ramener les produits de la base de donnée.
 
 aucune autorisation requise ni sécurité, type JSON.
 
+# Détail DATABASE
+VOICI LES 5 TABLES DE LA DB
+
+utlisateurs : composée de 6 colonnes idUti : L'Id de chaque utilisateur est un Integer et est une clé primaire qui ne peut accepter la valeur NULL, nomUti : L'initiale du nom de l'utilisateur (coupé par un LEFT()) est un CHAR(1) qui ne peut être NULL, prenomUti : Le prenom de l'utilisateur est un VARCHAR(40) qui ne peut être NULL, adresseUti : L'adresse physique de l'utilisateur est un VARCHAR(120) qui ne peut être NULL, emailUti : L'adresse e-mail de l'utilisateur est un VARCHAR(120) qui ne peut être NULL, villeUti : La ville ou habite l'utilisateur est un VARCHAR(120) qui ne peut être NULL.
+
+produits : composée de 2 colonnes idProd : L'id de chaque produit qui est un CHAR(3) et est une clé primaire qui qui ne peut être NULL, nomProd : Le nom du produit qui est un CHAR(40) qui ne peut être NULL.
+
+pieces : composée de 2 colonnes idPiece : l'id de chaque produit qui est un CHAR(4) et est une clé primaire qui ne peut être NULL, nomPiece : le nom de la pièce qui est un CHAR(20) qui ne peut être NULL.
+
+categories : composé de 2 colonnes idCat : L'id de chaque categorie qui est un CHAR(4) et est une clé primaire qui ne peut être NULL, nomCat : Le nom de la catégorie qui est un CHAR(20) qui ne peut être NULL.
+
+produitsCategories : composé de 3 colonnes ( TABLE DE LIAISON ) idPc : L'id reliant le produit à sa catégorie qui est un Integer et est une clé primaire qui ne peut être NULL, prodId : Clé étrangère de la table produits de la colonne (idProd), catId : Clé étrangère de la table categories de la colonne (idCat).
+
+categoriesPieces : composé de 3 colonnes ( TABLE DE LIAISON ) idCp : L'id reliant la categorie à sa pièce qui est un Integer et est une clé primaire qui ne peut être NULL, catId : Clé étrangère de la table categories de la colonne du même nom, pieceId : Clé étrangère de la table pieces de la colonne(idPiece).
+
 
