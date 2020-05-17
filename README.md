@@ -8,6 +8,7 @@
 # Description du Projet
 BESOINS ATTENDUS PAR L UTILISATEUR
 * IKEO regroupe sur son site web les différnets produits vendus par la société.
+
 FONCTIONNALITES
 * Une page découpée en trois parties : * Un menu cliquable : Il propose les salles où les meubles se situent dans la maison.
                                        * Un espace libre : Pour afficher les requêtes qui sont faites en BACKEND.
@@ -19,7 +20,7 @@ Voici les divers aspects techniques mis en place pour quel le projet voit le jou
 *backend* (base de données, procédures SQL, webservices associé à sa procédure propre) et *frontend*(HTML, CSS, JS)
 BACKEND 
 * Base de données :
-  Appelée dbIkeo, elle est composé de 6 TABLES :
+  Composé de 6 tables (utilisateurs, produitsCategories, produits, pieces
                         * utlisateurs : composée de 6 colonnes : 
                                                                * idUti:
                                                                * nomUti:
