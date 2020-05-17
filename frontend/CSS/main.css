@@ -27,6 +27,11 @@ li a:hover {
     background-color: #4CAF50;
 }
 
+span{
+    font-weight: bold;
+    font-size: large;
+}
+
 /*STYLE GALLERIE*/
 
 div.gallerie {
@@ -90,9 +95,3 @@ input[type=submit]{
     color: lightblue;
     font-size: small;
 }
-
-span{
-    font-weight: bold;
-    font-size: large;
-}
-
