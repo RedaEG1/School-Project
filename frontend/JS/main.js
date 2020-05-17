@@ -117,6 +117,13 @@ function genererMenu(tableauObjets){
     liste += "</ul>";
 
 }
+/***********************************************************************************************/
+
+/**
+ * affiche en HTML le menu
+ * 
+ * @param tab est le tableau construit grace a la fonction genererMenu
+ */
 
 function afficherMenu(tab){
     let menu = document.getElementById("menu");
