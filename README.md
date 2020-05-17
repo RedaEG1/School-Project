@@ -43,20 +43,35 @@ ENDPOINT : Le but de la procédure
 Simon PERIQUET : 
 
 * La procédure "proc_callPieces()" invoquée par le service web "piecesMenu" : 
+
+
 PARAMETRE(S) : AUCUN.
+
+
 FORMAT DE REPONSE : 2 colonnes ( un id CHAR(4) et un nom  CHAR(20)
 
 ENDPOINT : Ramener TOUTES les pièces avec leur id et leur nom
 
 * La procédure "proc_choixPiece(IN idsalle CHAR(20)) invoquée par le service web "choixPieces" :
+
+
 PARAMETRE(S) : Un ID de type CHAR(20)
+
+
 FORMAT DE REPONSE : 2 colonnes ( un id CHAR(4), meuble VARCHAR(40))
+
 
 ENDPOINT : Ramener les meubles d'une pièce précise via l'id de celle-ci
 
 * La procédure "proc_nouvUti(IN prenom VARCHAR(40), IN nom VARCHAR(40), IN adresse VARCHAR(120), IN email VARCHAR(120), IN ville VARCHAR(40) ) invoquée par le service web "nouvelUti" :
-PARAMETRE(S) : 5 paramètres : un prenom type VARCHAR(40), nom VARCHAR(40), adresse VARCHAR(120), adresse email VARCHAR(120), une ville VARCHAR(40)
+
+
+PARAMETRE(S) : 5 paramètres : un prenom type VARCHAR(40), nom VARCHAR(40), adresse VARCHAR(120), adresse email VARCHAR(120), une ville 
+VARCHAR(40)
+
+
 FORMAT DE REPONSE : AUCUN.
+
 
 ENDPOINT : Inscrit dans la table utilisateurs le nouvel inscrit en lui donnant en plus un Id et ne prenant que l'initiale du nom
 
