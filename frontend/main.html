@@ -3,71 +3,37 @@ PAR SIMON PERIQUET
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="SHORTCUT ICON" href="images/logoIKEO.png">
+    <link rel="SHORTCUT ICON" href="img/logoIKEO.png">
     <title id="titleBar">IKEO</title>
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <script src="js/main.js"></script>
 </head>
 <body>
-<div>
-    <ul>
-        <li><a href=""> LIVING</a></li>
-        <li><a href=""> SALLE A MANGER</a></li>
-        <li><a href=""> CUISINE</a></li>
-        <li><a href=""> TERRASSE</a></li>
-        <li><a href=""> CHAMBRE ENFANT</a></li>
-        <li><a href=""> CHAMBRE ADULTE</li>
-    </ul>
+
+<div  id="menu">
+    <!--menu-->
 </div>
-<div class="gallerie">
-    <a target="_blank" href="images/armoire1.jpg">
-        <img src="images/armoire1.jpg" alt="Armoire" width="600" height="400">
-    </a>
-    <div class="legende">Armoire la plus vendue</div>
-</div>
-</div>
-<div class="gallerie">
-    <a target="_blank" href="images/chaise1.jpg">
-        <img src="images/chaise1.jpg" alt="Chaise" width="600" height="400">
-    </a>
-    <div class="legende">Chaise la plus vendue</div>
-</div>
-</div>
-<div class="gallerie">
-    <a target="_blank" href="images/table1.jpg">
-        <img src="images/table1.jpg" alt="Table" width="600" height="400">
-    </a>
-    <div class="legende">Table la plus vendue</div>
-</div>
-</div>
-<div class="gallerie">
-    <a target="_blank" href="images/lit1.jpg">
-        <img src="images/lit1.jpg" alt="Lit" width="600" height="400">
-    </a>
-    <div class="legende">Lit le plus vendu</div>
-</div>
-</div>
-<div class="gallerie">
-    <a target="_blank" href="images/bureau1.jpg">
-        <img src="images/bureau1.jpg" alt="Bureau" width="600" height="400">
-    </a>
-    <div class="legende">Bureau le plus vendu</div>
-</div>
-</div>
+<!--MAIN-->
+<main id="mainId">
+    <span>NOS MAGASINS SONT REOUVERTS A PARTIR DU 11 MAI !</span>
+</main>
 </body>
 <footer>
+    <!--FORMULAIRE-->
     <div>
-        <form>
+        <form id="formId" action=# onsubmit="presenterResultats();">
             <label for="prenom">PRENOM :</label>
             <input type="text" id="prenom" name="prenom"><br>
             <label for="nom">NOM :</label>
             <input type="text" id="nom" name="nom"><br>
             <label for="adresse">ADRESSE :</label>
-            <input type="text" id="adresse name="adresse><br>
+            <input type="text" id="adresse"  name="adresse"><br>
             <label for="adresseE">ADRESSE EMAIL :</label>
             <input type="email" id="adresseE" name="adresseE"><br>
-            <input type="submit" value="S'inscire">
-            <img style="float: right" src="images/logoIKEOmenu.png" alt="Logo">
+            <label for="ville">VILLE :</label>
+            <input type="text" id="ville" name="ville"><br>
+            <input type="submit" value="S'inscrire">
+            <img style="float: right" src="img/logoIKEOmenu.png" alt="Logo">
             <p id="droits">TOUS DROITS RESERVES</p>
         </form>
     </div>
