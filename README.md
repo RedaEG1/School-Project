@@ -124,3 +124,4 @@ categoriesPieces : composé de 3 colonnes ( TABLE DE LIAISON )
   ![DATABASE](https://user-images.githubusercontent.com/64195967/82154179-6c5ac780-986c-11ea-9239-bf948196bee3.png)
 
 
+                                                                           DOCUMENTE PAR SIMON PERIQUET
