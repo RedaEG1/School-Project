@@ -8,16 +8,31 @@ document.addEventListener('DOMContentLoaded', piecesIkeo);
 
 
 let liste = '';
+
+/**
+ * Simple fonction de teste
+ */
 function presenterResultats(){
     console.log("envoie des données en cours.");
 }
 
+/***********************************************************************************************/
+
+/**
+ * Envoie les données du formulaire
+ */
 function initPage(){
     let formulaireUti = document.getElementById("formId");
     formulaireUti.addEventListener("submit", soumettreRequete);
 }
 
+/***********************************************************************************************/
 
+/**
+ * Soumet la requete avec les différentes informations du formulaire pour les enregistrer dans la table
+ *
+ * @param event le clique sur le bouton de type submit
+ */
 function soumettreRequete(event){
     event.preventDefault();
     let formulaire = this;
@@ -29,6 +44,17 @@ function soumettreRequete(event){
     envoyerRequete(prenom, nom, adresse, email, ville);
 }
 
+/***********************************************************************************************/
+
+/**
+ * Envoie la requete en utilisant le webservice souhaité
+ * 
+ * @param prenom prenom de la personne inscrite
+ * @param nom de la personne inscrite
+ * @param adresse adresse de la personne inscrite
+ * @param email adresse email de la personne inscrite
+ * @param ville ville ou habite de la personne inscrite
+ */
 function envoyerRequete(prenom, nom, adresse, email, ville){
     let xhr = new XMLHttpRequest();
     xhr.open("get", "http://localhost:80/nouvelUti?prenom=" + prenom + "&nom=" + nom + "&adresse=" + adresse + "&email=" + email + "&ville=" + ville, true);
@@ -39,7 +65,14 @@ function envoyerRequete(prenom, nom, adresse, email, ville){
         }
     xhr.send();
 }
+
+/***********************************************************************************************/
 //SELECT
+
+/**
+ * Demande via le service précisé ci-dessous les différentes pièces du menu + appel à une fonction pour traiter la réponse donnée
+ * 
+ */
 function piecesIkeo(){
     let xhr = new XMLHttpRequest();
     xhr.open("get", "http://localhost:80/piecesMenu", true);
@@ -48,6 +81,12 @@ function piecesIkeo(){
     xhr.send();
 }
 
+/***********************************************************************************************/
+
+/**
+ * Transforme la réponse en texte adapté en js. Appel 2 autres fonctions pour traiter le tableau d'objet 
+ * 
+ */
 function traiterReponse(){
     let reponse = JSON.parse(this.responseText);
     genererMenu(reponse);
@@ -55,22 +94,31 @@ function traiterReponse(){
     //return reponse;
 }
 
+/***********************************************************************************************/
+
+/**
+ * Génère le menu composé des pièces pour pouvoir l'afficher dynamiquement en HTML
+ * 
+ * @param tableauObjets tableau d'objet acquis par la fonction JSON.parse
+ * @returns {string} retourne le tableau pour pouvoir l'afficher
+ */
 function genererMenu(tableauObjets){
-    if(tableauObjets.length === 0 ) return "<select></select>";
-    liste = '<select id="menu">';
+    if(tableauObjets.length === 0 ) return "<ul></ul>";
+    liste = '<ul id="menu">';
     let id= "idpieces";
     let pieces= "pieces";
     let proprietes = Object.keys(tableauObjets[0]);
 
     for(let objet in tableauObjets) {
-        let option = "<option ";
-            option += 'id="' + tableauObjets[objet][id] + '">' + tableauObjets[objet][pieces]  + '</option>';
+        let option = "<li ";
+            option += 'id="' + tableauObjets[objet][id] + '">' + tableauObjets[objet][pieces]  + '</li>';
         liste += option;
     }
-        liste += "</select>";
+        liste += "</ul>";
 
 }
-//Action sur le menu
-function gid(id){
-    return document.getElementById(id);
-}
+
+/***********************************************************************************************/
+//Action sur le menu ( à compléter par les autres étudiants)
+
+
