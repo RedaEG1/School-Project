@@ -132,3 +132,67 @@ function afficherMenu(tab){
 
 /***********************************************************************************************/
 //Action sur le menu ( à compléter par les 
+
+
+/***********************************************************************************************/
+
+/****Par REDA EL GHEMARY****/
+
+//AU DEBUT DU CODE
+document.addEventListener('DOMContentLoaded', produitsIkeo);
+
+let produits = '';
+
+
+//A LA SUITE DU CODE
+
+/*
+*Appel le service désigner pour récupérer les différents produits de la base de donnée puis traite la requête dans une fonction
+*/
+function produitsIkeo(){
+    let xhr = new XMLHttpRequest();
+    xhr.open("get", "http://localhost:80/produits", true);
+    xhr.onload = trtReponse;
+    xhr.send();
+}
+
+/*
+ * Transforme la réponse en texte adapté en js. Appel 2 autres fonctions pour traiter le tableau d'objet
+ */
+function trtReponse(){
+    let reponse = JSON.parse(this.responseText);
+    genererProduits(reponse);
+    afficherProduits(produits);
+}
+
+/**
+ * Génère le tableau composé des produits pour pouvoir l'afficher dynamiquement en HTML
+ *
+ * @param tableauObjets tableau d'objet acquis par la fonction JSON.parse
+ * @returns {string} retourne le tableau pour pouvoir l'afficher
+ */
+function genererProduits(tableauObjets){
+    if(tableauObjets.length === 0 ) return "<ul></ul>";
+    produits = '<ul id="prods">';
+    let id= "idProd";
+    let prod= "nomProd";
+    let proprietes = Object.keys(tableauObjets[0]);
+
+    for(let objet in tableauObjets) {
+        let li = "<li ";
+        li += 'id="' + tableauObjets[objet][id] + '">' + '<a>' + tableauObjets[objet][prod]  + '</li>';
+        produits += li;
+    }
+    produits += "</ul>";
+}
+
+/**
+ * affiche en HTML la table des produits
+ * 
+ * @param elem est le tableau construit grace a la fonction genererProduits
+ */
+function afficherProduits(elem){
+    document.getElementById("sectionId").innerHTML += elem;
+}
+
+/***********************************************************************************************/
