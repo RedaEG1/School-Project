@@ -67,7 +67,7 @@ function envoyerRequete(prenom, nom, adresse, email, ville){
 }
 
 /***********************************************************************************************/
-//SELECT
+//MENU
 
 /**
  * Demande via le service précisé ci-dessous les différentes pièces du menu + appel à une fonction pour traiter la réponse donnée
