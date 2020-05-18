@@ -188,7 +188,7 @@ function genererProduits(tableauObjets){
  * @param elem est le tableau construit grace a la fonction genererProduits
  */
 function afficherProduits(elem){
-    document.getElementById("sectionId").innerHTML += elem;
+    document.getElementById("mainId").innerHTML += elem;
 }
 
 /***********************************************************************************************/
